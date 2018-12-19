@@ -26,4 +26,3 @@ class VisitorLandingController extends CI_Controller
     }
 
 }
-
