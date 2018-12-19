@@ -59,7 +59,6 @@ tinyMCE.init({
         input.setAttribute('accept', 'image/* audio/* video/*');
         input.onchange = function() {
             var file = this.files[0];
-
             var reader = new FileReader();
             reader.readAsDataURL(file);
             reader.onload = function () {
@@ -73,14 +72,13 @@ tinyMCE.init({
                 cb(blobInfo.blobUri(), { title: file.name });
             };
         };
-
         input.click();
     }
 });
 
 </script>
 
-<body>
+<body style="position:relative; ">
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
@@ -93,7 +91,6 @@ tinyMCE.init({
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
       </div>
       <br><br>
-
     </div>
   </div>
 

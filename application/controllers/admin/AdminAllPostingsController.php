@@ -1,6 +1,5 @@
 
 <?php
-
 require_once('application/debug/ChromePhp.php');
 
 class AdminAllPostingsController extends CI_Controller
@@ -24,8 +23,11 @@ class AdminAllPostingsController extends CI_Controller
 
     public function previewPosting($id)
     {
-        $data['posting'] = $this->postings_model->getSinglePosting($id);	
+        $data['posting'] = $this->postings_model->getSinglePosting($id);
+        $this->load->view('shared/adminHeader');	
         $this->load->view('admin/previewposting', $data);
+        ChromePhp::log("data : " . json_encode($data));
+        $this->load->view('shared/adminFooter');
     }
 
 

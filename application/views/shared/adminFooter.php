@@ -1,5 +1,16 @@
 
-<footer class="page-footer orange">
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+  });
+
+</script>
+
+<footer class="page-footer orange" style="position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:auto; ">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -36,6 +47,7 @@
   </footer>
 
 
+      
 
 
   </body>

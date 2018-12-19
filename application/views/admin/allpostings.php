@@ -1,4 +1,8 @@
-<table class="highlight">
+<div class="container">
+    <div class="section">
+
+  <div class="row">
+  <table class="highlight">
         <thead>
           <tr>
               <th>ID</th>
@@ -38,3 +42,7 @@
             <?php }} ?>
         </tbody>
 </table>
+  </div>
+    </div>
+    <br><br>
+  </div>
