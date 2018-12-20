@@ -13,6 +13,12 @@ class visitor_model extends CI_Model
 	{	
         $query = $this->db->query("SELECT `postings`.*, `categories`.* FROM `postings` JOIN `categories` ON `categories`.`c_id` = `postings`.`category` WHERE `postings`.`id` = 3 ORDER BY `postings`.`id` DESC");
         return $query->result();
-	}
+    }
+    
+    function addMessage($post)
+	{	
+        $result = $this->db->insert('messages', $post); 
+        return $result;
+    }
 
 }

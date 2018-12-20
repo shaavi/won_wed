@@ -22,3 +22,8 @@ main {
   flex: 1 0 auto;
 }
 
+body {
+  min-height:100%; 
+  position:relative; 
+}
+

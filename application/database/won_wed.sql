@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2018 at 03:57 PM
+-- Generation Time: Dec 20, 2018 at 05:13 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.1.11
 
@@ -41,7 +41,11 @@ INSERT INTO `categories` (`c_id`, `cat_name`) VALUES
 (1, 'Hotels'),
 (2, 'Photography'),
 (3, 'Floral'),
-(4, 'Designers');
+(4, 'Designers'),
+(5, 'Vehicles'),
+(6, 'Wedding Planners'),
+(7, 'Dancers'),
+(8, 'Designers');
 
 -- --------------------------------------------------------
 
@@ -65,7 +69,7 @@ CREATE TABLE `messages` (
   `id` int(11) NOT NULL,
   `sender_email` varchar(255) NOT NULL,
   `sender_name` varchar(255) NOT NULL,
-  `company` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
   `message` varchar(1024) NOT NULL,
   `status` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -99,7 +103,25 @@ CREATE TABLE `postings` (
 INSERT INTO `postings` (`id`, `title`, `category`, `content`, `contact_number`, `contact_email`, `address`, `location`, `price_from`, `price_to`, `cover_image`, `website_link`, `status`) VALUES
 (1, 'samara hotel', '1', 'qwertrtqerrrrrrrrrrr', '0713216547', 'shavi@g.lk', 'earg', '34', 450, 2000, 'fghsfgh', '', 1),
 (2, 'd', '1', 'I am not editable', '6', 's@g.lk', 'rg', '5', 5, 5, 'hdt', '5', 0),
-(3, 'd', '2', 'I am not editable', '6', 's@g.lk', 'rg', '5', 5, 5, 'hdt', '5', 0);
+(3, 'd', '2', 'I am not editable', '6', 's@g.lk', 'rg', '5', 5, 5, 'hdt', '5', 0),
+(4, 'photo 2', '2', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(5, 'photo 2', '2', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(6, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(7, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(8, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(9, 'photo 2', '3', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(10, 'photo 2', '5', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(11, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(12, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(13, 'photo 2', '3', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(14, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(15, 'photo 2', '6', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(16, 'photo 2', '7', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(17, 'photo 2', '8', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(18, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(19, 'photo 2', '8', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(20, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0),
+(21, 'photo 2', '4', 'm Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bo', '0714569874', 'user@yahoo.com', '6525, weyrfgwey rd, colombo', '56', 450, 985, 'r5yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy', 'www.uyefgwufyewyff.lk', 0);
 
 --
 -- Indexes for dumped tables
@@ -143,7 +165,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT for table `postings`
 --
 ALTER TABLE `postings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -14,9 +14,9 @@ class VisitorLandingController extends CI_Controller
 
     public function index()
     {
-        $this->load->view('shared/adminHeader');
+        $this->load->view('shared/visitorHeader');
         $this->load->view('visitor/landingpage');
-        $this->load->view('shared/adminFooter');
+        $this->load->view('shared/visitorFooter');
     }
 
 

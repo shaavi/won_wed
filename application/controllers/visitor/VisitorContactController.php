@@ -23,57 +23,51 @@ class VisitorContactController extends CI_Controller
 
     public function getMail()
     {
-        $config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
+        $m_email = "i like to put an ad.";
+        // $m_email = $this->input->post('m_email'); 
+        $m_name = $this->input->post('m_name'); 
+        $m_phone = $this->input->post('m_phone'); 
+        $m_message = $this->input->post('m_message');
+
+        // $post=array(
+        //     'sender_email'=> $m_email,
+        //     'sender_name'=> $m_name,
+        //     'phone'=> $m_phone,
+        //     'message'=> $m_message, 
+
+        // );
+
+        // $this->visitor_model->addMessage($post);
+
+        $config['protocol']     = 'smtp';
+        $config['smtp_host']    = 'in-v3.mailjet.com';
+        $config['smtp_port']    = '587';
+        $config['smtp_user']    = '09bdeb8dc980c5c636cfe6ff0464dad3';
+        $config['smtp_pass']    = 'c03a826de50e91c8d59743c036a2632b';
+        $config['charset']      = 'utf-8';
+        $config['newline']      = "\r\n";
 
         $this->email->initialize($config);
 
         $from_email = "your@example.com"; 
-         $to_email = "shavindip@gmail.com"; 
+        $to_email = "shavindip@gmail.com"; 
    
-         //Load email library 
-         $this->load->library('email'); 
+        //Load email library 
+        $this->load->library('email'); 
    
-         $this->email->from($from_email, 'Your Name'); 
-         $this->email->to($to_email);
-         $this->email->subject('Email Test'); 
-         $this->email->message('Testing the email class.'); 
-   
-         //Send mail 
-         if($this->email->send()) {
-            echo "successful";
-         }
-         else{
-            echo "error";
-         }
-         
+        $this->email->from('shavindipathirana@gmail.com', 'WonWed'); 
+        $this->email->to('shavindip@gmail.com');
+        $this->email->subject('New Mail From Won Wed'); 
+        $this->email->message('You got a new message from Won Wed.' .$m_email); 
 
-        // echo "get mail";
-        // // $sender_name = $this->input->post('title');
-        // // $sender_email = $this->input->post('category');
-        // // $sender_msg = $this->input->post('contact_number'); 
-        
-        // $config['protocol'] = 'sendmail';
-        // $config['mailpath'] = '/usr/sbin/sendmail';
-        // $config['charset'] = 'iso-8859-1';
-        // $config['wordwrap'] = TRUE;
+        //Send mail 
+        if($this->email->send()) {
+        echo "successful";
+        }
+        else{
+        echo "error";
+        }
 
-        // $this->email->initialize($config);
-
-        // $this->email->from('hesara@gmail.com', 'Won Wed');
-        // $this->email->to('shavindip@gmail.com');
-
-        // $this->email->subject('Email Test');
-        // $this->email->message('Testing the email class.');        
-
-
-        // if($this->email->send()){
-        //     echo "successful";
-        // }else{
-        //     "error in sending";
-        // }
     }
 
 
