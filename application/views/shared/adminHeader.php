@@ -39,7 +39,7 @@
     </div>
   </nav>
 
-<ul id="slide-out" class="sidenav">
+<!-- <ul id="slide-out" class="sidenav">
   <li><div class="user-view">
     <div class="background">
       <img src="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
@@ -54,4 +54,4 @@
   <li><a class="subheader">Subheader</a></li>
   <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 </ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->

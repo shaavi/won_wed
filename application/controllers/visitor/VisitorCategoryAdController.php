@@ -12,12 +12,12 @@ class VisitorCategoryAdController extends CI_Controller
     }
 
 
-    public function index($id)
+    public function index()
     {
-        $data['postings'] = $this->visitor_model->getAllCategoryPostings();
+        // $data['postings'] = $this->visitor_model->getAllCategoryPostings();
         $this->load->view('shared/adminHeader');
-        $this->load->view('visitor/categoryads', $data);
-        $this->load->view('shared/adminFooter');
+        $this->load->view('visitor/categoryads');
+        // $this->load->view('shared/adminFooter');
     }
 
 
