@@ -15,6 +15,7 @@ class AdminAddPostingsController extends CI_Controller
 
     public function index()
     {
+        $data['categories'] = $this->postings_model->allCategories();
         $this->load->view('shared/adminHeader');
         $this->load->view('admin/addpostings');
         $this->load->view('shared/adminFooter');

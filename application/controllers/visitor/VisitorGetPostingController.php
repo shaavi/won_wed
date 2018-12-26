@@ -14,10 +14,10 @@ class VisitorGetPostingController extends CI_Controller
 
     public function index()
     {
-        $data['posting'] = $this->visitor_model->getSinglePosting();
+        // $data['posting'] = $this->visitor_model->getSinglePosting();
         $this->load->view('shared/adminHeader');
-        $this->load->view('visitor/getposting', $data);
-        $this->load->view('shared/adminFooter');
+        $this->load->view('visitor/getposting');
+        // $this->load->view('shared/adminFooter');
     }
 
 

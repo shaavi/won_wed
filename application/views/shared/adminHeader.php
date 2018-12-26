@@ -18,6 +18,7 @@
     <script src="<?php echo base_url(); ?>js/init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5be0078cb789db0011cddbeb&product=inline-share-buttons' async='async'></script>
 
     
 </head>

@@ -150,8 +150,14 @@ tinyMCE.init({
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="location" name="location" type="text" class="validate">
-          <label for="location">Location</label>
+          <input id="website" name="website" type="text" class="validate">
+          <label for="website">Facebook</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="website" name="website" type="text" class="validate">
+          <label for="website">Instagram</label>
         </div>
       </div>
       <div class="row">

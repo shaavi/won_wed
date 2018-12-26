@@ -10,6 +10,9 @@ class postings_model extends CI_Model
 	}
 
 
+
+
+
     function editPosting($post, $id)
 	{		
 		$this->db->where('id', $id);
