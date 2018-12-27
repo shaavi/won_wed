@@ -106,16 +106,17 @@ tinyMCE.init({
           <label for="title">Title</label>
         </div>
         <div class="input-field col s6">
-          <input id="category" name="category" type="text" class="validate">
-          <label for="category">Category</label>
+          <div id="category" name="category" class="input-field col s12">
+
+            <select multiple required id="category" name="category">
+            <option value="" disabled selected>Choose the author</option>
+            <?php foreach($categories as $cat){?>
+              <option value="<?=$cat->c_id?>"><?=$cat->cat_name?></option>  
+            <?php } ?>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input value="I am not editable" id="content" name="content" type="text" class="validate">
-          <label for="content">Content</label>
-        </div>
-      </div>
+      </div>      
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="Placeholder" id="contact_number" name="contact_number" type="text" class="validate">
@@ -166,13 +167,15 @@ tinyMCE.init({
           <label for="cover_image">cover image</label>
         </div>
       </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input value="I am not editable" id="content" name="content" type="text" class="validate">
+          <label for="content">Content</label>
+        </div>
+      </div>
       <input type="submit" id="submit" value="Save Changes"></br></br></br>
     </form>
   </div>
     </div>
     <br><br>
   </div>
-
-
-
-

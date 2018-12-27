@@ -10,7 +10,11 @@ class postings_model extends CI_Model
 	}
 
 
-
+	function getAllCategories()
+	{		
+		$query = $this->db->get('categories');
+        return $query->result();
+	}
 
 
     function editPosting($post, $id)
